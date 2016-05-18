@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
@@ -39,19 +40,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="">Inicio</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="registro.html">Registro</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="calendario.html">Calendario</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="resultados.html">Resultados</a>
+                    </li>
+                    <li>
+                        <a href="admin.html">Admin</a>
                     </li>
                 </ul>
             </div>
@@ -80,24 +84,23 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2>Bienvenido</h2>
-                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p>
-                    <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a>
+                <p>Está es la página oficial del XII Campeonato Universitario por equipos de Tiro con Arco aquí podrás: 
+                <ul>
+                    <li> Información relacionada con el Torneo</li>
+                    <li> Registrar tu equipo</li>
+                    <li> Consultar la programación en el calendario</li>
+                    <li> Revisar los resultados de los equipos participantes</li>
+                </ul> 
                 </p>
             </div>
             <div class="col-sm-4">
                 <h2>Contacto</h2>
                 <address>
-                    <strong>Start Bootstrap</strong>
-                    <br>3481 Melrose Place
-                    <br>Beverly Hills, CA 90210
+                    <strong>Asociación de tiro con arco UNAM</strong>
+                    <br> <strong>Presidente</strong> | Miguel Angel García Ortiz
+                    <br><abbr title="Celular">Celular:</abbr> (55) 48864391
+                    <br><abbr title="E-mail">Mail:</abbr> mago1957@yahoo.com
                     <br>
-                </address>
-                <address>
-                    <abbr title="Phone">P:</abbr>(123) 456-7890
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
                 </address>
             </div>
         </div>
@@ -109,17 +112,21 @@
             <div class="col-sm-4">
                  <a href= "registro.html"><img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""></a>
                 <h2>Registro</h2>
-                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+                <p>Registrate en el Torneo</p>
             </div>
             <div class="col-sm-4">
                 <a href="pages/calendar.html"><img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""></a>
                 <h2>Calendario</h2>
-                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p>Verifica las fechas del torneo y los equipos participantes</p>
             </div>
             <div class="col-sm-4">
-                <a href="pages/results.html"><img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""></a>
+            <a href="resultados.html">
+                <button type="button" class="btn btn-default" aria-label="Left Align" >
+                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                </button>
+            </a>
                 <h2>Resultados</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p>Sigue las estadisticas de los matches</p>
             </div>
         </div>
         <!-- /.row -->
@@ -130,7 +137,10 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>
+                        <img src="http://mirrors.creativecommons.org/presskit/cc.primary.srr.gif">
+                         Mictlanware | 2016
+                    </p>
                 </div>
             </div>
             <!-- /.row -->

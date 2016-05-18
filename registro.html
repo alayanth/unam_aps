@@ -1,47 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Registro</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<body>
 
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="registro.html">Registro</a>
+                    </li>
+                    <li>
+                        <a href="calendario.html">Calendario</a>
+                    </li>
+                    <li>
+                        <a href="resultados.html">Resultados</a>
+                    </li>
+                    <li>
+                        <a href="acerca.html">Acerca</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  <br>
+  <br>
 <div class="container">
+  <div class="col-md-6 col-md-offset-3">
   <h2>Registro en torneo</h2>
   <form role="form">
     <div class="form-group">
-      <label for="email">Universidad:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
+      <label for="universidad">Universidad</label>
+      <select>
+      <option value="Universidad Nacional Autónoma de México" > Universidad Nacional Autónoma de México</option>
+      <option value="Instituto Politécnico Nacional" > Instituto Politécnico Nacional</option>
+      <option value="Universidad Iberoamericana" > Universidad Iberoamericana</option>
+      <option value="Instituto Tecnológico y de Estudios Superiores de Monterrey" >Instituto Tecnológico y de Estudios Superiores de Monterrey </option>
+      <option value="Universidad Autónoma Metropolitana" >Universidad Autónoma Metropolitana </option>
+      <option value="Universidad La Salle" >Universidad La Salle </option>
+      <option value="Universidad del Valle de México" >Universidad del Valle de México</option>
+      <option value="Universidad Tecnológica de México" >Universidad Tecnológica de México </option>
+      <option value="Universidad Panamericana" >Universidad Panamericana </option>
+      <option value="Instituto Tecnológico Autónomo de México" >Instituto Tecnológico Autónomo de México</option>
+      <option value="Universidad del Valle de México" >Universidad del Valle de México</option>
+      </select>
     </div>
     <div class="form-group">
-      <label for="pwd">Nombre del equipo:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      <label for="equipo">Nombre del equipo:</label>
+      <input type="text" class="form-control" id="equipo" placeholder="Nombre del equipo">
     </div>
     <div class="form-group">
-      <label for="email">Jugador 1:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
+      <label for="jugadores">Jugadores:</label>
+      <div><input type="text" class="form-control" id="j1" placeholder="Jugador 1"></div>
+      <br>
+      <div><input type="text" class="form-control" id="j2" placeholder="Jugador 2"></div>
+      <br>
+      <div><input type="text" class="form-control" id="j3" placeholder="Jugador 3"></div>
     </div>
     <div class="form-group">
-      <label for="email">Jugador 2:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
+      <label for="suplente">Suplente :</label>
+      <input type="text" class="form-control" id="suplente" placeholder="Suplente">
     </div>
-    <div class="form-group">
-      <label for="email">Jugador 3:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="email">Sustituto:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-primary">Registrar!</button>
+    <button type="submit" class="btn btn-default">Limpiar</button>
   </form>
+  </div>
 </div>
 
 </body>
