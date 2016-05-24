@@ -22,7 +22,6 @@ $cuenta = "SELECT COUNT(idUniversidad) FROM example";
 $resQuery = $mysqli->query($query);
 $resCuenta = $mysqli->query($cuenta);
 
-echo "$resCuenta";
 $rowQ = $resQuery->fetch_array();
 $rowC = $resCuenta->fetch_array();
  echo $rowQ['nombre'];

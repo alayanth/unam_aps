@@ -22,32 +22,6 @@
     <link href="css/dashboard.css" rel="stylesheet">
     <script type="text/javascript" src="js/dashboard.js"></script>
 
-    <!-- funcionalidad AJAX-->
-    <script>
-  function showUser(str) {
-      if (str == "") {
-          document.getElementById("txtHint").innerHTML = "";
-          return;
-      } else { 
-          if (window.XMLHttpRequest) {
-              // code for IE7+, Firefox, Chrome, Opera, Safari
-              xmlhttp = new XMLHttpRequest();
-          } else {
-              // code for IE6, IE5
-              xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-          }
-          xmlhttp.onreadystatechange = function() {
-              if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                  document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
-              }
-          };
-          xmlhttp.open("GET","listuniv.php?q="+str,true);
-          xmlhttp.send();
-      }
-  }
-
-</script>
-
   </head>
 
   <body>
@@ -91,48 +65,21 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#general">General <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">General <span class="sr-only">(current)</span></a></li>
             <li><a href="#universidades">Universidades</a></li>
-            <li><a href="#equipos">Equipos</a></li>
-            <li><a href="#arbitros">Arbitros</a></li>
-            <li><a href="#carriles">Carriles</a></li>
-            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="#">Equipos</a></li>
+            <li><a href="#">Arbitros</a></li>
+            <li><a href="#">Carriles</a></li>
+            <li><a href="#">Calendario</a></li>
           </ul>
         </div>
 
 
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="general">
-          <h1 class="page-header">General</h1>        
-          <h2 class="sub-header">Section title</h2>
-        </div>
-
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="universidades">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="general">
           <h1 class="page-header">Univesidades</h1>
-          <div id="txtHint" onclick="showUser("1")"><b>Data</b></div>
-          <h2 class="sub-header">Tabla de datos</h2>
-        </div>
 
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
-          <h1 class="page-header">Equipos</h1>
-          <h2 class="sub-header">Section title</h2>
-        </div>
 
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
-          <h1 class="page-header">Árbitros</h1>
-          <h2 class="sub-header">Section title</h2>
         </div>
-
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
-          <h1 class="page-header">Carriles</h1>
-          <h2 class="sub-header">Section title</h2>
-        </div>
-
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
-          <h1 class="page-header">Calendario</h1>
-          <h2 class="sub-header">Section title</h2>
-        </div>
-
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
