@@ -46,41 +46,57 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3">
   <h2>Registro en torneo</h2>
-  <form role="form">
+  
+<form class="form-horizontal" id="form_members" role="form" action="basecon.php" method="POST">
+
     <div class="form-group">
       <label for="universidad">Universidad</label>
-      <select class="form-group">
-      <option value="Universidad Nacional Autónoma de México" > Universidad Nacional Autónoma de México</option>
-      <option value="Instituto Politécnico Nacional" > Instituto Politécnico Nacional</option>
-      <option value="Universidad Iberoamericana" > Universidad Iberoamericana</option>
-      <option value="Instituto Tecnológico y de Estudios Superiores de Monterrey" >Instituto Tecnológico y de Estudios Superiores de Monterrey </option>
-      <option value="Universidad Autónoma Metropolitana" >Universidad Autónoma Metropolitana </option>
-      <option value="Universidad La Salle" >Universidad La Salle </option>
-      <option value="Universidad del Valle de México" >Universidad del Valle de México</option>
-      <option value="Universidad Tecnológica de México" >Universidad Tecnológica de México </option>
-      <option value="Universidad Panamericana" >Universidad Panamericana </option>
-      <option value="Instituto Tecnológico Autónomo de México" >Instituto Tecnológico Autónomo de México</option>
-      <option value="Universidad del Valle de México" >Universidad del Valle de México</option>
+      <select class="form-group" name="universidad" id="universidad">
+      <option value="1" > Universidad Nacional Autónoma de México</option>
+      <option value="2" > Instituto Politécnico Nacional</option>
+      <option value="3" > Universidad Iberoamericana</option>
+      <option value="4" >Instituto Tecnológico y de Estudios Superiores de Monterrey </option>
+      <option value="5" >Universidad Autónoma Metropolitana </option>
+      <option value="6" >Universidad La Salle </option>
+      <option value="7" >Universidad del Valle de México</option>
+      <option value="8" >Universidad Tecnológica de México </option>
+      <option value="9" >Universidad Panamericana </option>
+      <option value="10" >Instituto Tecnológico Autónomo de México</option>
+      <option value="11" >Universidad del Valle de México</option>
       </select>
     </div>
     <div class="form-group">
       <label for="equipo">Nombre del equipo:</label>
-      <input type="text" class="form-control" id="equipo" placeholder="Nombre del equipo">
+      <input type="text" class="form-control" name="equipo" id="equipo" placeholder="Nombre del equipo">
     </div>
     <div class="form-group">
-      <label for="jugadores">Jugadores:</label>
-      <div><input type="text" class="form-control" id="j1" placeholder="Jugador 1"></div>
+      <label for="jugador1">Jugador 1:</label>
+      <div><input type="text" class="form-control" name="j1nombre" id="j1nombre" placeholder="Nombre de pila"></div>
       <br>
-      <div><input type="text" class="form-control" id="j2" placeholder="Jugador 2"></div>
+     <div><input type="text" class="form-control" name="j1ap1" id="j1ap1" placeholder="Apellido paterno"></div>
       <br>
-      <div><input type="text" class="form-control" id="j3" placeholder="Jugador 3"></div>
+	  <div><input type="text" class="form-control" name="j1ap2" id="j1ap2" placeholder="Apellido materno"></div>
+      <br>
+	  <label for="jugador2">Jugador 2:</label>
+	  <div><input type="text" class="form-control" name="j2nombre" id="j2nombre" placeholder="Nombre de pila"></div>
+      <br>
+	  <div><input type="text" class="form-control" name="j2ap1" id="j2ap1" placeholder="Apellido paterno"></div>
+      <br>
+	  <div><input type="text" class="form-control" name="j2ap2" id="j2ap2" placeholder="Apellido materno"></div>
+      <br>
+	  <label for="jugador3">Jugador 3:</label>
+	  <div><input type="text" class="form-control" name="j3nombre" id="j3nombre" placeholder="Nombre de pila"></div>
+      <br>
+	  <div><input type="text" class="form-control" name="j3ap1" id="j3ap1" placeholder="Apellido paterno"></div>
+      <br>
+	  <div><input type="text" class="form-control" name="j3ap2" id="j3ap2" placeholder="Apellido materno"></div>
+      <br>
     </div>
     <div class="form-group">
       <label for="suplente">Suplente :</label>
       <input type="text" class="form-control" id="suplente" placeholder="Suplente">
     </div>
-    <button type="submit" class="btn btn-primary">Registrar!</button>
-    <button type="submit" class="btn btn-default">Limpiar</button>
+    <button type="submit" class="btn btn-warning" name="submit" id="submit">Registrarse</button>
   </form>
   </div>
 </div>
