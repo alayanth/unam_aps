@@ -50,8 +50,8 @@
 <form class="form-horizontal" id="form_members" role="form" action="basecon.php" method="POST">
 
     <div class="form-group">
-      <label for="universidad">Universidad</label>
-      <select class="form-group" name="universidad" id="universidad">
+      <label for="universidad">Universidad:</label>
+      <select class="form" name="universidad" id="universidad">
       <option value="1" > Universidad Nacional Autónoma de México</option>
       <option value="2" > Instituto Politécnico Nacional</option>
       <option value="3" > Universidad Iberoamericana</option>
@@ -70,33 +70,28 @@
       <input type="text" class="form-control" name="equipo" id="equipo" placeholder="Nombre del equipo">
     </div>
     <div class="form-group">
-      <label for="jugador1">Jugador 1:</label>
-      <div><input type="text" class="form-control" name="j1nombre" id="j1nombre" placeholder="Nombre de pila"></div>
-      <br>
-     <div><input type="text" class="form-control" name="j1ap1" id="j1ap1" placeholder="Apellido paterno"></div>
-      <br>
-	  <div><input type="text" class="form-control" name="j1ap2" id="j1ap2" placeholder="Apellido materno"></div>
-      <br>
-	  <label for="jugador2">Jugador 2:</label>
-	  <div><input type="text" class="form-control" name="j2nombre" id="j2nombre" placeholder="Nombre de pila"></div>
-      <br>
-	  <div><input type="text" class="form-control" name="j2ap1" id="j2ap1" placeholder="Apellido paterno"></div>
-      <br>
-	  <div><input type="text" class="form-control" name="j2ap2" id="j2ap2" placeholder="Apellido materno"></div>
-      <br>
-	  <label for="jugador3">Jugador 3:</label>
-	  <div><input type="text" class="form-control" name="j3nombre" id="j3nombre" placeholder="Nombre de pila"></div>
-      <br>
-	  <div><input type="text" class="form-control" name="j3ap1" id="j3ap1" placeholder="Apellido paterno"></div>
-      <br>
-	  <div><input type="text" class="form-control" name="j3ap2" id="j3ap2" placeholder="Apellido materno"></div>
-      <br>
+     <label for="jugador1">Jugador 1:</label>
+     <div><input type="text" class="form-control" name="j1Nombre" id="j1Nombre" placeholder="Nombre"></div><br>
+     <div><input type="text" class="form-control" name="j1ApPat" id="j1ApPat" placeholder="Apellido paterno"></div><br>
+	   <div><input type="text" class="form-control" name="j1ApMat" id="j1ApMat" placeholder="Apellido materno"></div><br>
+	   <label for="jugador2">Jugador 2:</label>
+	   <div><input type="text" class="form-control" name="j2nombre" id="j2nombre" placeholder="Nombre"></div><br>
+	   <div><input type="text" class="form-control" name="j2ApPat" id="j2ApPat" placeholder="Apellido paterno"></div><br>
+	   <div><input type="text" class="form-control" name="j2ApMat" id="j2ApMat" placeholder="Apellido materno"></div><br>
+	   <label for="jugador3">Jugador 3:</label>
+	   <div><input type="text" class="form-control" name="j3Nombre" id="j3Nombre" placeholder="Nombre"></div><br>
+	   <div><input type="text" class="form-control" name="j3ApPat" id="j3ApPat" placeholder="Apellido paterno"></div><br>
+	   <div><input type="text" class="form-control" name="j3ApMat" id="j3ApMat" placeholder="Apellido materno"></div><br>
     </div>
     <div class="form-group">
       <label for="suplente">Suplente :</label>
-      <input type="text" class="form-control" id="suplente" placeholder="Suplente">
+      <input type="text" class="form-control" id="s1Nombre" name="s1Nombre" placeholder="Nombre"> <br>
+      <input type="text" class="form-control" id="s1ApPat" name="s1ApPat" placeholder="Apellido paterno"><br>
+      <input type="text" class="form-control" id="s1ApMat" name="s1ApMat" placeholder="Apellido materno"><br>
+
     </div>
-    <button type="submit" class="btn btn-warning" name="submit" id="submit">Registrarse</button>
+    <button type="submit" class="btn btn-warning" name="submit" id="submit">Registrarse!</button> 
+    <button type="submit" class="btn btn-submit" name="submit" id="submit">Cancelar</button>
   </form>
   </div>
 </div>
