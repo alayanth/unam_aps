@@ -5,28 +5,23 @@ $('#calendar').fullCalendar({
 		right: 'month,basicWeek,basicDay'
 	},
 	defaultDate: '2016-05-24',
-	editable: true,
+	editable: false,
 	eventLimit: true, // allow "more" link when too many events
     events: [
         {
         	title:'UNAM vs IBERO',
-        	start:'2016-05-26T10:00:00',
-        	end:'2016-05-30T09:00:00'
+        	start:'2016-05-10T10:00:00',
+        	end:'2016-05-10T11:00:00'
     	},
     	{
-        	title:'Client Appointment',
-        	start:'2016-05-2412T08:00:00',
-        	end:'2016-05-24T09:00:00'
+        	title:'UAM vs IPN',
+        	start:'2016-05-09T08:00:00',
+        	end:'2016-05-09T09:00:00'
     	},
     	{
-        	title:'Meeting whit clients',
-        	start:'2016-05-2412T10:15:00',
-        	end:'2016-05-24T12:00:00'
-    	},
-    	{
-        	title:'Conference',
-        	start:'2016-05-2412T07:00:00',
-        	end:'2016-05-24T12:00:00'
+        	title:'ITAM vs UVM',
+        	start:'2016-05-16T10:00:00',
+        	end:'2016-05-16T11:00:00'
     	},
     ]
 });
