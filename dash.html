@@ -73,7 +73,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Universidades</a>
-            <li><a href="teams.html">Equipos</a></li>
+            <li><a href="teams.html">Equipos</a></li> 
             <li><a href="reffer.html">Arbitros</a></li>
             <li><a href="lines.html">Carriles</a></li>
             <li><a href="calendar.html">Calendario</a></li>
@@ -83,17 +83,28 @@
         <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="universidades">
           <h1 class="page-header">Universidades</h1>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-xs-4">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Universidad">
+                <input type="text" class="form-control" placeholder="Universidad" id="universidad">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Agregar</button>
+                  <button class="btn btn-default" type="button" onclick="addUniversidad()">Agregar</button>
                 </span>
               </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+            </div><!-- /.col-xs-4 -->
+            <div class="col-xs-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Id" id="universidad">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick="rmUniversidad()">Eliminar</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-xs-4 -->
           </div><!-- /.row -->
-        <h2 class="sub-header">Lista</h2>
-        <div id="txtHint" onclick="holaMundo()"><b>Data</b></div>
+        <h2 class="sub-header">Lista <button class="btn btn-default" onclick="showUniversidad()">Actualizar</button></h2> 
+        <table>
+          <div id="listaUniversidad"><b>Universidad Data</b></div>  
+        </table>
+        
 
         </div>
 
