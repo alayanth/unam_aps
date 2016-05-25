@@ -1,17 +1,22 @@
 var attempt = 3; // Número de intentos
 
 function validate(){
+	
+	var username = document.getElementById('username').value;
+	var password = document.getElementById('password').value;
 
-	var username = document.getElementById("username").value;
-	var password = document.getElementById("password").value;
-	if ( username == "martita" && password == "123123"){
-		alert("Ehlo");
-		alert("Welcome" username "+" password);
-		window.location = "dash.html"; // Redirecting to other page.
+	if ( username == "admin" && password == "admin"){
+		window.close();
+		window.open('http://localhost/unam_aps/dash.html');
+		return false;
+	}
+	else if( username == "arbitro" && password == "123123"){
+		window.close();
+		window.open('http://localhost/unam_aps/arbitro.html'); // Redirecting to other page.
 		return false;
 	}
 	else{
-		attempt --;// Decrementing by one.
+		attempt++;// Decrementing by one.
 		alert("Usuario o contraseña incorrecto");
 		// Disabling fields after 3 attempts.
 		if( attempt == 0){

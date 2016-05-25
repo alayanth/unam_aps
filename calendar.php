@@ -25,10 +25,6 @@
     <!-- funcionalidad AJAX-->
     <script type="text/javascript" src="js/magia.js"></script>
 
-    <!--Database Daffy-->
-    <script src="js/taffy.js"></script>
-    <script type="text/javascript" src="js/universidad.js"></script>
-
   </head>
 
   <body>
@@ -72,29 +68,17 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Universidades</a>
+            <li><a href="dash.html">Universidades</a>
             <li><a href="teams.html">Equipos</a></li>
             <li><a href="reffer.html">Arbitros</a></li>
             <li><a href="lines.html">Carriles</a></li>
-            <li><a href="calendar.html">Calendario</a></li>
+            <li class="active"><a href="calendar.html">Calendario</a></li>
           </ul>
         </div>
 
-        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="universidades">
-          <h1 class="page-header">Universidades</h1>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Universidad">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Agregar</button>
-                </span>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
-        <h2 class="sub-header">Lista</h2>
-        <div id="txtHint" onclick="holaMundo()"><b>Data</b></div>
-
+        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
+          <h1 class="page-header">Calendario</h1>
+          <h2 class="sub-header">Section title</h2>
         </div>
 
       </div>
