@@ -70,7 +70,8 @@
           <ul class="nav nav-sidebar">
             <li><a href="dash.html">Universidades</a>
             <li><a href="teams.html">Equipos</a></li>
-            <li class="active"><a href="reffer.html">Arbitros</a></li>
+            <li class="active"><a href="reffer.html">Árbitros</a></li>
+            <li><a href="players.html">Jugadores</a></li>
             <li><a href="lines.html">Carriles</a></li>
             <li><a href="calendar.html">Calendario</a></li>
           </ul>
@@ -78,11 +79,38 @@
 
         <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="equipos">
           <h1 class="page-header">Árbitros</h1>
-          <h2 class="sub-header">Section title</h2>
-        </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="input">
+                <input type="text" class="form-control" placeholder="Nombre" id="nomArbitro">
+                <br>
+                <input type="text" class="form-control" placeholder="Apellido Paterno" id="ApPatArbitro">
+                <br>
+                <input type="text" class="form-control" placeholder="Apellido Materno" id="ApMatArbitro">
+                <br>
+                <input type="text" class="form-control" placeholder="Usuario" id="usuarioArbitro">
+                <br>
+                <input type="password" class="form-control" placeholder="Contraseña" id="password">
+                <br>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button class="btn btn-default" type="button" onclick="addArbitro()">Agregar</button>
+                </div>
 
-      </div>
-    </div>
+              </div><!-- /input-group -->
+            </div><!-- /.col-xs-4 -->
+            <div class="col-xs-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="ID" id="idArbitro">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick="rmArbitro()">Eliminar</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-xs-4 -->
+          </div><!-- /.row -->
+          <h2 class="sub-header">Lista <button class="btn btn-default" onclick="showArbitros()">Actualizar</button></h2>
+
+          <div id="listArbitros" onclick="showArbitros()" class="container"><b> Data</b></div>
+        </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
