@@ -26,6 +26,4 @@ Cuando encuentres uno contactame alayanth@gmail.com
 
 Obra protegida bajo CC BY 2.0[Creative Commons Atribución 2.0](https://creativecommons.org/licenses/by/2.0/) 
 
-# Update
-
-Estaré completando el proyecto a lo largo de estos meses (Abril - Julio 2017)
+### Update(20170409) Estaré completando el proyecto a lo largo de estos meses (Abril - Julio)
